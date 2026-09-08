@@ -3,12 +3,12 @@ using System;
 
 public abstract class BaseState<EState> where EState : Enum
 {
-    BaseState(EState stateKey)
+    public BaseState(EState stateKey)
     {
         StateKey = stateKey;
     }
 
-    public abstract EState StateKey { get; protected set;}
+    public EState StateKey { get; protected set;}
 
     public abstract void EnterState();
     public abstract void ExitState();
