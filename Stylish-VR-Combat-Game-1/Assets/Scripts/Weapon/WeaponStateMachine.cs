@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.InputSystem;
 
 public class WeaponStateMachine : StateManager<WeaponStateMachine.EWeaponState>
 {
@@ -11,18 +12,24 @@ public class WeaponStateMachine : StateManager<WeaponStateMachine.EWeaponState>
     }
 
     [SerializeField] private Animator _weaponAnimator;
+    [SerializeField] private InputActionProperty _triggerValue;
+    [SerializeField] private InputActionProperty _gripValue;
     private WeaponContext _context;
 
     private void Awake()
     {
         ValidateConstraints();
 
-        _context = new WeaponContext(_weaponAnimator);
+        _context = new WeaponContext(_weaponAnimator, _triggerValue, _gripValue);
+
+        InitializeStates();
     }
 
     private void ValidateConstraints()
     {
         Assert.IsNotNull(_weaponAnimator, "Weapon Animator is not assigned in the inspector.");
+        //Assert.IsNotNull(_triggerValue, "Trigger Input Action is not assigned in the inspector.");
+        //Assert.IsNotNull(_gripValue, "Grip Input Action is not assigned in the inspector.");
     }
 
     private void InitializeStates()
