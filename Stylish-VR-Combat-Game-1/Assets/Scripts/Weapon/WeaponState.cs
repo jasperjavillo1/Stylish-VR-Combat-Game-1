@@ -8,4 +8,11 @@ public abstract class WeaponState : BaseState<WeaponStateMachine.EWeaponState>
     {
         Context = context;
     }
+
+    public override void EnterState()
+    {
+        Debug.Log("Entering state: " + StateKey);
+    }
+
+    public override void UpdateState(){}
 }
