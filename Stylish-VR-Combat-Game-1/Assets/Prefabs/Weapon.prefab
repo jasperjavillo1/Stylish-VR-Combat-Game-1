@@ -49,7 +49,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bcd179473e28a244829aa261225627e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponStateMachine
-  weaponAnimator: {fileID: 8999553549830176665}
+  _weaponAnimator: {fileID: 0}
+  _triggerValue:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Trigger Value
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6f31e78b-9f20-4723-a0af-ed0a1d7b3886
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
+    m_Reference: {fileID: 0}
+  _gripValue:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Grip Value
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 1183b53f-3b89-418b-9549-3e1c38069fc1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
+    m_Reference: {fileID: 0}
 --- !u!95 &8999553549830176665
 Animator:
   serializedVersion: 7
