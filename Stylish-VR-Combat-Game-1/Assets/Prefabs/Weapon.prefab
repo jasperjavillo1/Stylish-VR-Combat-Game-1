@@ -76,6 +76,7 @@ MonoBehaviour:
       m_Flags: 0
       m_Priority: 0
     m_Reference: {fileID: 0}
+  _blast: {fileID: 1885028206001253240, guid: 154b6efb52c172344ae2e1e0471e8d1d, type: 3}
 --- !u!95 &8999553549830176665
 Animator:
   serializedVersion: 7
