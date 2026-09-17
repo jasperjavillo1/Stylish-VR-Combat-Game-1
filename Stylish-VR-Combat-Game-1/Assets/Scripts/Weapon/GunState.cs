@@ -24,7 +24,6 @@ public class GunState : WeaponState
     public override void ExitState()
     {
         _chargeLevel = 0; // Reset charge level when exiting the state
-        base.ExitState();
     }
     public override WeaponStateMachine.EWeaponState GetNextState()
     {
