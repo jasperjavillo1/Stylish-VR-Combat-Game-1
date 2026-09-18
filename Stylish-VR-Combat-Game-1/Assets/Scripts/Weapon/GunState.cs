@@ -19,6 +19,8 @@ public class GunState : WeaponState
     public override void UpdateState()
     {
         base.UpdateState();
+        ChargeWeapon();
+        FireWeapon();
     }
 
     public override void ExitState()
@@ -62,6 +64,7 @@ public class GunState : WeaponState
             if (blastScript != null)
             {
                 blastScript.MaxDistance = _chargeLevel; // Set the max distance based on the charge level
+                _chargeLevel = 0; // Reset charge level after firing
             }
         }
     }

@@ -859,6 +859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Weapon
       objectReference: {fileID: 0}
+    - target: {fileID: 816177793048605906, guid: cf5ceccdbdac42947aa585d2154bad07, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1341837696102430110, guid: cf5ceccdbdac42947aa585d2154bad07, type: 3}
       propertyPath: _weaponAnimator
       value: 
