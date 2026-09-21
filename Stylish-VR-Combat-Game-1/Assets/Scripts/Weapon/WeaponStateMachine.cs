@@ -14,13 +14,15 @@ public class WeaponStateMachine : StateManager<WeaponStateMachine.EWeaponState>
     [SerializeField] private Animator _weaponAnimator;
     [SerializeField] private InputActionProperty _triggerValue;
     [SerializeField] private InputActionProperty _gripValue;
+    [SerializeField] private GameObject _blast;
+    [SerializeField] private GameObject _blastSpawnOffset;
     private WeaponContext _context;
 
     private void Awake()
     {
         ValidateConstraints();
 
-        _context = new WeaponContext(_weaponAnimator, _triggerValue, _gripValue);
+        _context = new WeaponContext(_weaponAnimator, _triggerValue, _gripValue, _blast, _blastSpawnOffset);
 
         InitializeStates();
     }
