@@ -475,8 +475,8 @@ GameObject:
   - component: {fileID: 2563719727661168586}
   - component: {fileID: 6395037281560630533}
   - component: {fileID: 2980959423234690172}
-  m_Layer: 0
-  m_Name: Sheild
+  m_Layer: 2
+  m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -769,7 +769,7 @@ GameObject:
   - component: {fileID: 5086115515838935636}
   - component: {fileID: 6179060276405981513}
   - component: {fileID: 4503667399992116277}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Blade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
